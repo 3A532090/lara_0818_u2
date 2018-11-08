@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 */
 Route::get('/home','HomeController@index');
+Route::get('hello/{name?}',['as' => 'hello.index','uses' => 'HelloController@index']);
